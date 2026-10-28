@@ -7,181 +7,175 @@
 <meta name="description" content="Top-quality apartment cleaning services in Airdrie. M &amp; S City Wide Cleaning Services uses eco-friendly, safe products. Call 403-990-0971.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#10252b;
-  --teal:#0e5a5c;
-  --teal-d:#093f41;
-  --sand:#f5efe3;
-  --sand-d:#e9e0cd;
-  --coral:#e4693a;
-  --white:#fffdf8;
-  --line:rgba(16,37,43,.14);
+  --navy:#0a1a3f;
+  --navy2:#132a63;
+  --yellow:#ffd21f;
+  --aqua:#2fd4c4;
+  --pink:#ff6b8b;
+  --bg:#f3f7ff;
+  --white:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Manrope',sans-serif;color:var(--ink);background:var(--sand);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--navy);line-height:1.6;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
-.wrap{width:min(1180px,92%);margin:0 auto}
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:4px;font-weight:700;font-size:.98rem;transition:.25s;border:2px solid transparent;cursor:pointer;font-family:inherit}
-.btn-coral{background:var(--coral);color:#fff}
-.btn-coral:hover{background:#c9532a;transform:translateY(-2px)}
-.btn-line{border-color:var(--ink);color:var(--ink)}
-.btn-line:hover{background:var(--ink);color:var(--sand)}
-.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--teal);display:flex;align-items:center;gap:.8rem}
-.eyebrow::before{content:"";width:34px;height:2px;background:var(--coral)}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+.wrap{width:min(1220px,92%);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.8rem;border-radius:100px;font-weight:700;font-size:1rem;border:3px solid var(--navy);transition:.25s;cursor:pointer;font-family:inherit;background:var(--yellow);color:var(--navy);box-shadow:5px 5px 0 var(--navy)}
+.btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--navy)}
+.btn.alt{background:var(--white)}
+.btn.dark{background:var(--navy);color:var(--yellow);border-color:var(--navy);box-shadow:5px 5px 0 var(--aqua)}
+.pill{display:inline-block;padding:.45rem 1rem;border-radius:100px;background:var(--navy);color:var(--yellow);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 
-/* top strip + header */
-.strip{background:var(--teal-d);color:#d9ebe9;font-size:.86rem}
-.strip .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;flex-wrap:wrap}
-.strip a:hover{color:#fff}
-header{position:sticky;top:0;z-index:50;background:rgba(245,239,227,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+/* header */
+header{position:sticky;top:0;z-index:60;background:var(--navy);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
 .brand{display:flex;align-items:center;gap:.8rem}
-.mark{width:46px;height:46px;border-radius:50%;background:var(--teal);color:var(--sand);display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;position:relative}
-.mark::after{content:"";position:absolute;right:-3px;top:-3px;width:14px;height:14px;background:var(--coral);border-radius:50%;border:3px solid var(--sand)}
-.brand b{font-family:'Fraunces',serif;font-size:1.18rem;display:block;line-height:1.1}
-.brand small{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:700}
-nav ul{display:flex;gap:2rem;list-style:none;align-items:center}
-nav a.l{font-weight:600;font-size:.96rem;position:relative}
-nav a.l::after{content:"";position:absolute;left:0;bottom:-5px;height:2px;width:0;background:var(--coral);transition:.25s}
-nav a.l:hover::after{width:100%}
-.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
-.burger span{display:block;height:2px;background:var(--ink);margin:7px 6px}
+.mark{width:48px;height:48px;border-radius:14px;background:var(--yellow);color:var(--navy);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.05rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--aqua)}
+.brand b{font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;display:block;line-height:1.05}
+.brand small{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);font-weight:700}
+nav ul{display:flex;gap:1.8rem;list-style:none;align-items:center}
+nav a.l{font-weight:700;font-size:.95rem;opacity:.9}
+nav a.l:hover{color:var(--yellow);opacity:1}
+nav .btn{padding:.7rem 1.3rem;font-size:.92rem;border-color:var(--yellow);box-shadow:none}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;height:3px;background:#fff;margin:6px 7px;border-radius:3px}
 
-/* hero: offset editorial split */
-.hero{padding:4.5rem 0 0;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:end}
-.hero h1{font-size:clamp(2.6rem,5.4vw,4.6rem);margin:1.2rem 0 1.4rem}
-.hero h1 em{font-style:italic;color:var(--teal);font-weight:400}
-.hero p.lead{font-size:1.15rem;max-width:34rem;color:#2c4249}
-.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0 3rem}
-.hero-visual{position:relative}
-.photo{position:relative;background:linear-gradient(160deg,var(--teal) 0%,#16787a 100%);overflow:hidden}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.photo .ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.55);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;text-align:center;padding:1rem;background:repeating-linear-gradient(45deg,transparent 0 22px,rgba(255,255,255,.05) 22px 44px)}
-.cut{clip-path:polygon(0 0,calc(100% - 64px) 0,100% 64px,100% 100%,0 100%)}
-.hero-photo{aspect-ratio:3/4;max-height:620px;width:100%}
-.callcard{position:absolute;left:-2.2rem;bottom:2.2rem;background:var(--white);padding:1.2rem 1.5rem;box-shadow:0 18px 40px rgba(16,37,43,.18);border-left:5px solid var(--coral)}
-.callcard small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
-.callcard a{font-family:'Fraunces',serif;font-size:1.55rem;font-weight:700}
-.hero-base{border-top:1px solid var(--line);margin-top:0;grid-column:1/-1}
-.ticker{display:flex;gap:2.5rem;flex-wrap:wrap;padding:1.3rem 0;font-weight:700;font-size:.92rem}
-.ticker span{display:flex;align-items:center;gap:.6rem}
-.ticker span::before{content:"";width:9px;height:9px;background:var(--coral);transform:rotate(45deg)}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:4rem 0 0}
+.hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:var(--navy2);right:-160px;top:-180px}
+.hero::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:34px solid var(--aqua);opacity:.25;left:-90px;bottom:60px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.6rem);margin:1.4rem 0 1.4rem}
+.hero h1 span{color:var(--yellow)}
+.hero h1 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--aqua) 62%,var(--aqua) 90%,transparent 90%)}
+.hero p.lead{font-size:1.2rem;max-width:33rem;color:#c8d6f5}
+.hero-cta{display:flex;gap:1.2rem;flex-wrap:wrap;margin:2.2rem 0 3.5rem}
+.stage{position:relative;height:560px}
+.disc{position:absolute;inset:20px 10px 10px 40px;border-radius:50%;border:6px solid var(--yellow);overflow:hidden;background:linear-gradient(150deg,var(--aqua),#1a8fa0)}
+.ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);padding:1rem;background:repeating-linear-gradient(45deg,transparent 0 20px,rgba(255,255,255,.08) 20px 40px)}
+.disc img,.tile-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ring{position:absolute;left:-10px;bottom:20px;width:170px;height:170px;border-radius:50%;background:var(--yellow);color:var(--navy);display:grid;place-items:center;z-index:3;box-shadow:6px 6px 0 var(--navy2)}
+.ring svg{position:absolute;inset:0;animation:spin 16s linear infinite}
+.ring b{font-family:'Bricolage Grotesque',sans-serif;font-size:1.05rem;text-align:center;line-height:1.1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sticker{position:absolute;z-index:3;padding:.7rem 1.1rem;border-radius:14px;font-weight:700;font-size:.9rem;border:3px solid var(--navy);box-shadow:4px 4px 0 var(--navy);animation:float 5s ease-in-out infinite}
+.s1{right:0;top:50px;background:var(--aqua);color:var(--navy);transform:rotate(5deg)}
+.s2{right:20px;bottom:90px;background:var(--pink);color:var(--navy);transform:rotate(-4deg);animation-delay:1.5s}
+@keyframes float{50%{translate:0 -12px}}
 
-/* about: image left stacked, text right with checklist */
-.about{padding:7rem 0 6rem}
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center}
-.about-photos{position:relative;height:560px}
-.about-photos .a1{position:absolute;left:0;top:0;width:72%;height:78%}
-.about-photos .a2{position:absolute;right:0;bottom:0;width:52%;height:48%;border:8px solid var(--sand)}
-.about h2{font-size:clamp(2rem,3.6vw,3.1rem);margin:1.1rem 0 1.4rem}
-.about p{color:#2c4249;margin-bottom:1.1rem}
-.checks{list-style:none;margin:1.6rem 0 2rem;display:grid;gap:.75rem}
-.checks li{display:flex;gap:.9rem;align-items:flex-start;font-weight:600}
-.checks li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f5efe3' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+/* marquee */
+.marq{background:var(--yellow);color:var(--navy);border-top:4px solid var(--navy);border-bottom:4px solid var(--navy);overflow:hidden;transform:rotate(-1.2deg);margin:-1px -2% 0;position:relative;z-index:5}
+.track{display:flex;gap:3rem;white-space:nowrap;width:max-content;animation:slide 28s linear infinite;padding:1.1rem 0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.6rem;text-transform:uppercase}
+.track span::after{content:"\2726";margin-left:3rem;color:var(--navy2)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.hero-end{height:40px;background:var(--bg)}
 
-/* services: dark index list, not cards */
-.services{background:var(--ink);color:var(--sand);padding:6.5rem 0}
-.services-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:3.5rem}
-.services h2{font-size:clamp(2rem,3.8vw,3.2rem)}
-.services .eyebrow{color:#7fd0cd}
-.services-head p{color:#b9ccca}
-.svc{border-top:1px solid rgba(245,239,227,.18)}
-.svc a{display:grid;grid-template-columns:70px 1fr auto;gap:1.5rem;align-items:center;padding:1.7rem .5rem;border-bottom:1px solid rgba(245,239,227,.18);transition:.3s}
-.svc a:hover{background:var(--teal);padding-left:1.4rem;padding-right:1.4rem}
-.svc .n{font-family:'Fraunces',serif;color:var(--coral);font-size:1.1rem}
-.svc h3{font-size:clamp(1.4rem,2.6vw,2.1rem);font-weight:500}
-.svc .arrow{width:44px;height:44px;border:1.5px solid rgba(245,239,227,.4);border-radius:50%;display:grid;place-items:center;transition:.3s}
-.svc a:hover .arrow{background:var(--coral);border-color:var(--coral);transform:rotate(-45deg)}
+/* bento about */
+.about{padding:6.5rem 0 5rem}
+.head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.head h2{font-size:clamp(2.2rem,4.6vw,4rem);max-width:40rem;margin-top:1rem}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(150px,auto);gap:1.2rem}
+.tile{border-radius:28px;padding:2rem;border:3px solid var(--navy);position:relative;overflow:hidden;transition:.3s}
+.tile:hover{transform:translateY(-6px) rotate(-.6deg)}
+.t-main{grid-column:span 7;grid-row:span 2;background:var(--white)}
+.t-main h3{font-size:2rem;margin-bottom:1rem}
+.t-main p{color:#34466f;margin-bottom:1rem}
+.t-img{grid-column:span 5;grid-row:span 2;padding:0}
+.tile-img{position:absolute;inset:0;background:linear-gradient(150deg,var(--navy2),var(--aqua))}
+.t-eco{grid-column:span 4;background:var(--aqua)}
+.t-detail{grid-column:span 4;background:var(--yellow)}
+.t-sat{grid-column:span 4;background:var(--pink)}
+.tile .no{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:3.4rem;line-height:1;display:block;margin-bottom:.6rem}
+.tile h3.sm{font-size:1.45rem;margin-bottom:.5rem}
+.tile p.sm{font-size:.98rem}
 
-/* what we cover: horizontal band with big words */
-.cover{padding:6.5rem 0;background:var(--white)}
-.cover-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:4rem;align-items:center}
-.cover h2{font-size:clamp(2rem,3.6vw,3rem);margin:1.1rem 0 1.4rem}
-.cover p{color:#2c4249;margin-bottom:1.5rem}
-.tags{display:flex;flex-wrap:wrap;gap:.7rem}
-.tags span{padding:.6rem 1.1rem;border:1.5px solid var(--ink);border-radius:100px;font-weight:600;font-size:.95rem;transition:.25s}
-.tags span:hover{background:var(--ink);color:var(--sand)}
-.cover-photo{aspect-ratio:1/1;border-radius:2px;transform:rotate(2.5deg);box-shadow:14px 14px 0 var(--sand-d)}
+/* services */
+.services{background:var(--navy);color:#fff;padding:6.5rem 0;position:relative;overflow:hidden}
+.services::before{content:"";position:absolute;right:-120px;top:80px;width:380px;height:380px;border-radius:50%;background:var(--navy2)}
+.services .wrap{position:relative}
+.services .pill{background:var(--yellow);color:var(--navy)}
+.services .head p{max-width:26rem;color:#c8d6f5}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.svc{border-radius:26px;padding:1.8rem 1.6rem 1.6rem;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;border:3px solid #fff;color:var(--navy);transition:.3s;position:relative}
+.svc:hover{transform:translateY(-8px) rotate(1.2deg)}
+.svc .n{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:4rem;line-height:.9;opacity:.9}
+.svc h3{font-size:1.55rem}
+.svc .go{position:absolute;right:1.2rem;top:1.2rem;width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--yellow);display:grid;place-items:center;transition:.3s}
+.svc:hover .go{transform:rotate(-45deg)}
+.c1{background:var(--yellow)}.c2{background:var(--aqua)}.c3{background:var(--pink)}.c4{background:#fff}
+.c5{background:var(--aqua)}.c6{background:var(--yellow)}.c7{background:var(--pink);grid-column:span 2}
 
-/* promise: three columns separated by rules */
-.promise{padding:6.5rem 0}
-.promise h2{font-size:clamp(2rem,3.6vw,3rem);max-width:30rem;margin:1.1rem 0 3.5rem}
-.prom-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.prom{padding:0 2.2rem;border-left:1px solid var(--line)}
-.prom:first-child{padding-left:0;border-left:0}
-.prom .big{font-family:'Fraunces',serif;font-size:3.6rem;color:var(--coral);line-height:1;margin-bottom:1rem;font-weight:400}
-.prom h3{font-size:1.4rem;margin-bottom:.7rem}
-.prom p{color:#2c4249;font-size:.98rem}
+/* every corner */
+.cover{padding:6rem 0 5rem;overflow:hidden}
+.cover-top{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:3.5rem}
+.cover h2{font-size:clamp(2.2rem,4.6vw,4rem);margin-top:1rem}
+.cover p{color:#34466f;font-size:1.1rem}
+.big-words{border-top:4px solid var(--navy);border-bottom:4px solid var(--navy);padding:.6rem 0;overflow:hidden}
+.big-words .track{animation-duration:36s;font-size:clamp(3rem,8vw,6.5rem);padding:.3rem 0;color:transparent;-webkit-text-stroke:2px var(--navy)}
+.big-words .track span:nth-child(even){color:var(--navy);-webkit-text-stroke:0}
+.big-words .track span::after{color:var(--pink);-webkit-text-stroke:0}
 
 /* contact */
-.contact{background:var(--teal);color:var(--sand);padding:6.5rem 0;position:relative}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem}
-.contact .eyebrow{color:#a8e0dd}
-.contact h2{font-size:clamp(2.1rem,4vw,3.4rem);margin:1.1rem 0 1.4rem}
-.contact p{color:#cfe6e4}
-.info{margin-top:2.2rem;display:grid;gap:1.3rem}
-.info div small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#8fd3d0;font-weight:700}
-.info div a,.info div span{font-family:'Fraunces',serif;font-size:1.3rem}
-.info a:hover{color:var(--coral)}
-form{background:var(--sand);color:var(--ink);padding:2.6rem;display:grid;gap:1.2rem;border-radius:2px;box-shadow:14px 14px 0 rgba(0,0,0,.18)}
-form h3{font-size:1.6rem}
-label{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:grid;gap:.45rem}
-input,textarea{font:inherit;padding:.9rem 1rem;border:1.5px solid rgba(16,37,43,.25);background:var(--white);border-radius:3px;color:var(--ink);text-transform:none;letter-spacing:0;font-weight:500}
-input:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,90,92,.15)}
-textarea{min-height:130px;resize:vertical}
+.contact{padding:5rem 0 7rem}
+.cbox{background:var(--yellow);border:4px solid var(--navy);border-radius:42px;padding:3.5rem;display:grid;grid-template-columns:.95fr 1.05fr;gap:3.5rem;box-shadow:12px 12px 0 var(--navy);position:relative}
+.cbox h2{font-size:clamp(2.1rem,4vw,3.4rem);margin:1.1rem 0 1.2rem}
+.info{display:grid;gap:1.1rem;margin-top:2rem}
+.info div{background:var(--white);border:3px solid var(--navy);border-radius:18px;padding:.9rem 1.2rem;display:flex;flex-direction:column}
+.info small{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#4a5c88}
+.info a,.info span{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.25rem}
+form{background:var(--navy);color:#fff;border-radius:30px;padding:2.4rem;display:grid;gap:1.1rem;align-self:start;rotate:1.2deg}
+form h3{font-size:1.8rem;color:var(--yellow)}
+label{display:grid;gap:.4rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+input,textarea{font:inherit;padding:.9rem 1rem;border-radius:14px;border:3px solid transparent;background:#fff;color:var(--navy);text-transform:none;letter-spacing:0;font-weight:500}
+input:focus,textarea:focus{outline:none;border-color:var(--aqua)}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-self:start;border-color:var(--yellow)}
 
 /* footer */
-footer{background:var(--ink);color:#b9ccca;padding:5rem 0 0;font-size:.95rem}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:3rem;padding-bottom:3.5rem}
-footer .brand b{color:var(--sand)}
-footer .brand small{color:#7fd0cd}
+footer{background:var(--navy);color:#c8d6f5;padding:5rem 0 0;font-size:.97rem;position:relative}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:3rem;padding-bottom:3.5rem}
+footer .brand b{color:#fff}
 footer p{margin-top:1.2rem;max-width:22rem}
-footer h4{font-family:'Fraunces',serif;color:var(--sand);font-size:1.15rem;margin-bottom:1.2rem;font-weight:600}
-footer ul{list-style:none;display:grid;gap:.65rem}
-footer a:hover{color:var(--coral)}
-.foot-bar{border-top:1px solid rgba(245,239,227,.14);padding:1.5rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.88rem}
-.foot-bar a{color:var(--sand);font-weight:700;border-bottom:1px solid var(--coral)}
+footer h4{font-family:'Bricolage Grotesque',sans-serif;color:var(--yellow);font-size:1.2rem;margin-bottom:1.2rem}
+footer ul{list-style:none;display:grid;gap:.6rem}
+footer a:hover{color:var(--yellow)}
+.foot-bar{border-top:2px solid var(--navy2);padding:1.5rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.9rem}
+.foot-bar a{color:var(--yellow);font-weight:700;border-bottom:2px solid var(--aqua)}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+.rv{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
 
-@media(max-width:960px){
-  .hero-grid,.about-grid,.cover-grid,.contact-grid,.services-head{grid-template-columns:1fr;gap:2.5rem}
-  .callcard{left:1rem}
-  .hero-photo{max-height:460px;aspect-ratio:4/3}
-  .about-photos{height:420px}
-  .prom-grid{grid-template-columns:1fr}
-  .prom{padding:1.8rem 0;border-left:0;border-top:1px solid var(--line)}
-  .prom:first-child{border-top:0}
+@media(max-width:1020px){
+  .hero-grid,.cover-top,.cbox{grid-template-columns:1fr}
+  .stage{height:440px}
+  .bento{grid-template-columns:repeat(6,1fr)}
+  .t-main,.t-img{grid-column:span 6}
+  .t-img{min-height:280px}
+  .t-eco,.t-detail,.t-sat{grid-column:span 6}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .c7{grid-column:span 2}
   .foot-grid{grid-template-columns:1fr 1fr}
   .burger{display:block}
-  nav ul{position:absolute;left:0;right:0;top:100%;background:var(--sand);flex-direction:column;padding:1.5rem 4%;gap:1.2rem;border-bottom:1px solid var(--line);display:none;align-items:flex-start}
+  nav ul{position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;padding:1.5rem 4%;gap:1.2rem;display:none;align-items:flex-start;border-top:2px solid var(--navy2)}
   nav ul.open{display:flex}
-  .strip .wrap{justify-content:center;text-align:center}
+  .cbox{padding:2rem}
 }
 @media(max-width:560px){
+  .sgrid{grid-template-columns:1fr}
+  .c7{grid-column:auto}
   .foot-grid{grid-template-columns:1fr}
-  .svc a{grid-template-columns:44px 1fr 40px;gap:.8rem}
-  form{padding:1.6rem}
-  .about{padding:4.5rem 0}
+  .stage{height:380px}
+  .ring{width:130px;height:130px}
+  .track{font-size:1.2rem}
 }
 </style>
 </head>
 <body>
-
-<div class="strip">
-  <div class="wrap">
-    <span>263 Morningside Green SW, Airdrie, AB T4B 0C2</span>
-    <span><a href="tel:4039900971">403-990-0971</a> &nbsp;|&nbsp; <a href="mailto:maryjaneligaray@gmail.com">maryjaneligaray@gmail.com</a></span>
-  </div>
-</div>
 
 <header>
   <div class="wrap nav">
@@ -196,7 +190,7 @@ footer a:hover{color:var(--coral)}
         <li><a class="l" href="#about">About us</a></li>
         <li><a class="l" href="#services">Services</a></li>
         <li><a class="l" href="#contact">Contact</a></li>
-        <li><a class="btn btn-coral" href="tel:4039900971">Call 403-990-0971</a></li>
+        <li><a class="btn" href="tel:4039900971">403-990-0971</a></li>
       </ul>
     </nav>
   </div>
@@ -207,119 +201,124 @@ footer a:hover{color:var(--coral)}
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Airdrie, Alberta</div>
-      <h1>Top-quality apartment cleaning, <em>done the way you always desired.</em></h1>
-      <p class="lead">Let M &amp; S City Wide Cleaning Services shine your house the way you have always desired. Call us today!</p>
+      <span class="pill">Airdrie, Alberta</span>
+      <h1>Top-quality <u>apartment cleaning</u> services in <span>Airdrie</span></h1>
+      <p class="lead">Let M &amp; S City Wide Cleaning Services shine your houses the way you have always desired. Call us today!</p>
       <div class="hero-cta">
-        <a class="btn btn-coral" href="tel:4039900971">Call us: 403-990-0971</a>
-        <a class="btn btn-line" href="#services">See our services</a>
+        <a class="btn" href="tel:4039900971">Call us: 403-990-0971</a>
+        <a class="btn alt" href="#services">Our services</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="photo cut hero-photo">
+    <div class="stage">
+      <div class="disc">
         <div class="ph">Hero photo<br>images/hero.jpg</div>
         <img src="images/hero.jpg" alt="Cleaner vacuuming a bright living room in an Airdrie apartment" onerror="this.remove()">
       </div>
-      <div class="callcard"><small>Call us today</small><a href="tel:4039900971">403-990-0971</a></div>
-    </div>
-    <div class="hero-base">
-      <div class="ticker">
-        <span>Bedroom cleaning</span><span>Bathroom cleaning</span><span>Apartment cleaning</span><span>Daily cleaning</span><span>Commercial cleaning</span><span>Ceiling cleaning</span><span>Building cleaning</span>
+      <div class="ring">
+        <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="19" letter-spacing="3" fill="#0a1a3f"><textPath href="#c">CALL US TODAY * CALL US TODAY * </textPath></text></svg>
+        <b>403<br>990<br>0971</b>
       </div>
+      <div class="sticker s1">Eco-friendly, safe products</div>
+      <div class="sticker s2">Great attention to detail</div>
     </div>
   </div>
+  <div style="height:70px"></div>
 </section>
 
+<div class="marq" aria-hidden="true">
+  <div class="track">
+    <span>Bedroom cleaning</span><span>Bathroom cleaning</span><span>Apartment cleaning</span><span>Daily cleaning</span><span>Commercial cleaning</span><span>Ceiling cleaning</span><span>Building cleaning</span>
+    <span>Bedroom cleaning</span><span>Bathroom cleaning</span><span>Apartment cleaning</span><span>Daily cleaning</span><span>Commercial cleaning</span><span>Ceiling cleaning</span><span>Building cleaning</span>
+  </div>
+</div>
+<div class="hero-end"></div>
+
 <section class="about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-photos rv">
-      <div class="photo a1 cut"><div class="ph">Photo<br>images/about-1.jpg</div><img src="images/about-1.jpg" alt="Spotless bathroom with sparkling fixtures" onerror="this.remove()"></div>
-      <div class="photo a2"><div class="ph">Photo<br>images/about-2.jpg</div><img src="images/about-2.jpg" alt="Clean upholstered sofa and fresh carpet" onerror="this.remove()"></div>
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <span class="pill">About us</span>
+        <h2>Dust, stains and smudges? We handle every inch.</h2>
+      </div>
     </div>
-    <div class="rv">
-      <div class="eyebrow">About us</div>
-      <h2>Thorough dusting, scrubbing and vacuuming in every inch of your home.</h2>
-      <p>Are you looking for cleaning services that would provide thorough dusting, scrubbing and vacuuming to every inch of your house in Airdrie? If yes, then our team of professionals at M &amp; S City Wide Cleaning Services is your ideal choice to eliminate all the dust and stains that have always bothered you after a long day at work.</p>
-      <p>When you think of hiring a professional maid service, you need to choose a company that offers high-quality cleaning services by using only eco-friendly and safe cleaning products. For this, you can definitely count on us.</p>
-      <ul class="checks">
-        <li>Eco-friendly and safe cleaning products only</li>
-        <li>Great attention to detail on every job</li>
-        <li>Your satisfaction at the top of our priority list</li>
-      </ul>
-      <a class="btn btn-coral" href="#contact">Write to us</a>
+    <div class="bento rv">
+      <div class="tile t-main">
+        <h3>Thorough dusting, scrubbing and vacuuming.</h3>
+        <p>Are you looking for cleaning services that would provide thorough dusting, scrubbing and vacuuming to every inch of your house in Airdrie? If yes, then our team of professionals at M &amp; S City Wide Cleaning Services is your ideal choice to eliminate all the dust and stains that have always bothered you after a long day at work.</p>
+        <p>When you think of hiring a professional maid service, you need to choose a company that offers you high-quality cleaning services by using only eco-friendly and safe cleaning products.</p>
+        <a class="btn dark" href="#contact" style="margin-top:.6rem">Write to us</a>
+      </div>
+      <div class="tile t-img">
+        <div class="tile-img"><div class="ph">Photo<br>images/about-1.jpg</div><img src="images/about-1.jpg" alt="Spotless bathroom with sparkling fixtures" onerror="this.remove()"></div>
+      </div>
+      <div class="tile t-eco"><span class="no">01</span><h3 class="sm">Eco-friendly and safe</h3><p class="sm">Only eco-friendly and safe cleaning products are used.</p></div>
+      <div class="tile t-detail"><span class="no">02</span><h3 class="sm">Attention to detail</h3><p class="sm">Our professionals put great attention to detail into every job.</p></div>
+      <div class="tile t-sat"><span class="no">03</span><h3 class="sm">Your satisfaction first</h3><p class="sm">We fulfill your specific cleaning needs to perfection.</p></div>
     </div>
   </div>
 </section>
 
 <section class="services" id="services">
   <div class="wrap">
-    <div class="services-head rv">
+    <div class="head rv">
       <div>
-        <div class="eyebrow">Products and services</div>
-        <h2 style="margin-top:1.1rem">What we clean for you.</h2>
+        <span class="pill">Products and services</span>
+        <h2>What we clean for you.</h2>
       </div>
       <p>We provide top-notch services for bathrooms, bedrooms and apartment cleaning, and we cover every height and corner of your space.</p>
     </div>
-    <div class="svc rv">
-      <a href="#contact"><span class="n">01</span><h3>Bedroom cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">02</span><h3>Bathroom cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">03</span><h3>Apartment cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">04</span><h3>Daily cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">05</span><h3>Commercial cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">06</span><h3>Ceiling cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a href="#contact"><span class="n">07</span><h3>Building cleaning</h3><span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <div class="sgrid rv">
+      <a class="svc c1" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">01</span><h3>Bedroom cleaning</h3></a>
+      <a class="svc c2" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">02</span><h3>Bathroom cleaning</h3></a>
+      <a class="svc c3" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">03</span><h3>Apartment cleaning</h3></a>
+      <a class="svc c4" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">04</span><h3>Daily cleaning</h3></a>
+      <a class="svc c5" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">05</span><h3>Commercial cleaning</h3></a>
+      <a class="svc c6" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">06</span><h3>Ceiling cleaning</h3></a>
+      <a class="svc c7" href="#contact"><span class="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="n">07</span><h3>Building cleaning</h3></a>
     </div>
   </div>
 </section>
 
 <section class="cover">
-  <div class="wrap cover-grid">
-    <div class="rv">
-      <div class="eyebrow">Every corner</div>
-      <h2>From stubborn smudges to spotless floors.</h2>
-      <p>From rinsing stubborn smudges in your bathrooms to leaving your carpets, floors and upholstery in your living rooms and bedrooms spotless, we cover every height and corner of your apartment and leave it sparkling clean before we leave.</p>
-      <div class="tags">
-        <span>Bathrooms</span><span>Carpets</span><span>Floors</span><span>Upholstery</span><span>Living rooms</span><span>Bedrooms</span>
+  <div class="wrap">
+    <div class="cover-top rv">
+      <div>
+        <span class="pill">Every height and corner</span>
+        <h2>From stubborn smudges to sparkling clean.</h2>
       </div>
-    </div>
-    <div class="rv">
-      <div class="photo cover-photo"><div class="ph">Photo<br>images/clean-detail.jpg</div><img src="images/clean-detail.jpg" alt="Freshly vacuumed carpet and a tidy sofa" onerror="this.remove()"></div>
+      <p>From rinsing stubborn smudges in your bathrooms to leaving your carpets, floors and upholstery in your living and bedrooms spotless, we cover every height and corner of your apartment and leave them sparkling clean before we leave!</p>
     </div>
   </div>
-</section>
-
-<section class="promise">
-  <div class="wrap">
-    <div class="eyebrow">Our promise</div>
-    <h2 class="rv">Why Airdrie homes choose M &amp; S City Wide.</h2>
-    <div class="prom-grid rv">
-      <div class="prom"><div class="big">01</div><h3>Eco-friendly, safe products</h3><p>We use only eco-friendly and safe cleaning products in your home.</p></div>
-      <div class="prom"><div class="big">02</div><h3>Attention to detail</h3><p>Our team of professionals puts great attention to detail into every cleaning job.</p></div>
-      <div class="prom"><div class="big">03</div><h3>Your needs, to perfection</h3><p>We put your satisfaction at the top of our priority and fulfill your specific cleaning needs.</p></div>
+  <div class="big-words" aria-hidden="true">
+    <div class="track">
+      <span>Bathrooms</span><span>Carpets</span><span>Floors</span><span>Upholstery</span><span>Living rooms</span><span>Bedrooms</span>
+      <span>Bathrooms</span><span>Carpets</span><span>Floors</span><span>Upholstery</span><span>Living rooms</span><span>Bedrooms</span>
     </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div class="rv">
-      <div class="eyebrow">Contact</div>
-      <h2>Give us a call to get full-service cleaning in Airdrie.</h2>
-      <p>Call us to get full-service cleaning from our professional team in Airdrie, or write to us using the form.</p>
-      <div class="info">
-        <div><small>Call us</small><a href="tel:4039900971">403-990-0971</a></div>
-        <div><small>Email</small><a href="mailto:maryjaneligaray@gmail.com">maryjaneligaray@gmail.com</a></div>
-        <div><small>Address</small><span>263 Morningside Green SW,<br>Airdrie, AB T4B 0C2</span></div>
-        <div><small>Language spoken</small><span>English</span></div>
+  <div class="wrap">
+    <div class="cbox rv">
+      <div>
+        <span class="pill">Contact</span>
+        <h2>Call us to get full-service cleaning in Airdrie!</h2>
+        <p>Give us a call to get full-service cleaning from our professional team in Airdrie.</p>
+        <div class="info">
+          <div><small>Call us</small><a href="tel:4039900971">403-990-0971</a></div>
+          <div><small>Email</small><a href="mailto:maryjaneligaray@gmail.com">maryjaneligaray@gmail.com</a></div>
+          <div><small>Address</small><span>263 Morningside Green SW, Airdrie, AB T4B 0C2</span></div>
+          <div><small>Language spoken</small><span>English</span></div>
+        </div>
       </div>
+      <form action="mailto:maryjaneligaray@gmail.com" method="post" enctype="text/plain">
+        <h3>Write us</h3>
+        <label>Name*<input type="text" name="name" required></label>
+        <label>Email*<input type="email" name="email" required></label>
+        <label>Comment*<textarea name="comment" required></textarea></label>
+        <button class="btn" type="submit">Submit</button>
+      </form>
     </div>
-    <form class="rv" action="mailto:maryjaneligaray@gmail.com" method="post" enctype="text/plain">
-      <h3>Write us</h3>
-      <label>Name*<input type="text" name="name" required></label>
-      <label>Email*<input type="email" name="email" required></label>
-      <label>Comment*<textarea name="comment" required></textarea></label>
-      <button class="btn btn-coral" type="submit">Submit</button>
-    </form>
   </div>
 </section>
 
@@ -330,7 +329,7 @@ footer a:hover{color:var(--coral)}
     <div class="foot-grid">
       <div>
         <a href="#top" class="brand"><span class="mark">M&amp;S</span><span><b>City Wide Cleaning</b><small>Services &middot; Airdrie</small></span></a>
-        <p>Top-quality cleaning services in Airdrie, using eco-friendly and safe cleaning products.</p>
+        <p>Top-quality cleaning services in Airdrie, using only eco-friendly and safe cleaning products.</p>
       </div>
       <div>
         <h4>Quick links</h4>
@@ -370,7 +369,7 @@ footer a:hover{color:var(--coral)}
 </footer>
 
 <script>
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
 </script>

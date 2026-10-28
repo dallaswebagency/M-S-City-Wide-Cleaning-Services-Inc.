@@ -32,18 +32,18 @@ h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-heigh
 .pill{display:inline-block;padding:.45rem 1rem;border-radius:100px;background:var(--navy);color:var(--yellow);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 
 /* header */
-header{position:sticky;top:0;z-index:60;background:var(--navy);color:#fff}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
-.brand{display:flex;align-items:center;gap:.8rem}
-.mark{width:48px;height:48px;border-radius:14px;background:var(--yellow);color:var(--navy);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.05rem;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--aqua)}
-.brand b{font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;display:block;line-height:1.05}
-.brand small{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);font-weight:700}
+header{position:sticky;top:0;z-index:60;background:#fff;color:var(--navy);border-bottom:4px solid var(--navy)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0}
+.brand{display:flex;align-items:center}
+.brand img{height:58px;width:auto}
+.logo-card{display:inline-block;background:#fff;border-radius:22px;padding:1rem 1.4rem;border:3px solid var(--yellow)}
+.logo-card img{height:62px;width:auto}
 nav ul{display:flex;gap:1.8rem;list-style:none;align-items:center}
-nav a.l{font-weight:700;font-size:.95rem;opacity:.9}
-nav a.l:hover{color:var(--yellow);opacity:1}
-nav .btn{padding:.7rem 1.3rem;font-size:.92rem;border-color:var(--yellow);box-shadow:none}
+nav a.l{font-weight:700;font-size:.95rem}
+nav a.l:hover{color:#d94f1c}
+nav .btn{padding:.7rem 1.3rem;font-size:.92rem;box-shadow:3px 3px 0 var(--navy)}
 .burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
-.burger span{display:block;height:3px;background:#fff;margin:6px 7px;border-radius:3px}
+.burger span{display:block;height:3px;background:var(--navy);margin:6px 7px;border-radius:3px}
 
 /* hero */
 .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:4rem 0 0}
@@ -115,6 +115,11 @@ nav .btn{padding:.7rem 1.3rem;font-size:.92rem;border-color:var(--yellow);box-sh
 .cover-top{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:3.5rem}
 .cover h2{font-size:clamp(2.2rem,4.6vw,4rem);margin-top:1rem}
 .cover p{color:#34466f;font-size:1.1rem}
+.cover-photos{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem}
+.cp{position:relative;aspect-ratio:16/10;border-radius:30px;overflow:hidden;border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);background:linear-gradient(150deg,var(--aqua),var(--navy2))}
+.cp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cp:nth-child(1){transform:rotate(-1.6deg)}
+.cp:nth-child(2){transform:rotate(1.6deg);margin-top:2rem}
 .big-words{border-top:4px solid var(--navy);border-bottom:4px solid var(--navy);padding:.6rem 0;overflow:hidden}
 .big-words .track{animation-duration:36s;font-size:clamp(3rem,8vw,6.5rem);padding:.3rem 0;color:transparent;-webkit-text-stroke:2px var(--navy)}
 .big-words .track span:nth-child(even){color:var(--navy);-webkit-text-stroke:0}
@@ -161,9 +166,14 @@ footer a:hover{color:var(--yellow)}
   .c7{grid-column:span 2}
   .foot-grid{grid-template-columns:1fr 1fr}
   .burger{display:block}
-  nav ul{position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;padding:1.5rem 4%;gap:1.2rem;display:none;align-items:flex-start;border-top:2px solid var(--navy2)}
+  nav ul{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;padding:1.5rem 4%;gap:1.2rem;display:none;align-items:flex-start;border-bottom:4px solid var(--navy)}
   nav ul.open{display:flex}
   .cbox{padding:2rem}
+}
+@media(max-width:700px){
+  .cover-photos{grid-template-columns:1fr}
+  .cp:nth-child(2){margin-top:0}
+  .brand img{height:48px}
 }
 @media(max-width:560px){
   .sgrid{grid-template-columns:1fr}
@@ -180,8 +190,7 @@ footer a:hover{color:var(--yellow)}
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="M &amp; S City Wide Cleaning Services home">
-      <span class="mark">M&amp;S</span>
-      <span><b>City Wide Cleaning</b><small>Services &middot; Airdrie</small></span>
+      <img src="images/logo-horizontal.png" alt="M &amp; S City Wide Cleaning Services, Airdrie" width="174" height="58">
     </a>
     <nav>
       <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -288,6 +297,10 @@ footer a:hover{color:var(--yellow)}
       </div>
       <p>From rinsing stubborn smudges in your bathrooms to leaving your carpets, floors and upholstery in your living and bedrooms spotless, we cover every height and corner of your apartment and leave them sparkling clean before we leave!</p>
     </div>
+    <div class="cover-photos rv">
+      <div class="cp"><div class="ph">Photo<br>images/about-2.jpg</div><img src="images/about-2.jpg" alt="Freshly cleaned sofa with plumped cushions and a neat throw" loading="lazy" onerror="this.remove()"></div>
+      <div class="cp"><div class="ph">Photo<br>images/clean-detail.jpg</div><img src="images/clean-detail.jpg" alt="Freshly vacuumed carpet beside a tidy sofa" loading="lazy" onerror="this.remove()"></div>
+    </div>
   </div>
   <div class="big-words" aria-hidden="true">
     <div class="track">
@@ -328,7 +341,7 @@ footer a:hover{color:var(--yellow)}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a href="#top" class="brand"><span class="mark">M&amp;S</span><span><b>City Wide Cleaning</b><small>Services &middot; Airdrie</small></span></a>
+        <a href="#top" class="logo-card" aria-label="M &amp; S City Wide Cleaning Services home"><img src="images/logo-horizontal.png" alt="M &amp; S City Wide Cleaning Services, Airdrie" width="186" height="62"></a>
         <p>Top-quality cleaning services in Airdrie, using only eco-friendly and safe cleaning products.</p>
       </div>
       <div>
